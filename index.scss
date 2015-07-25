@@ -233,7 +233,7 @@
               cursor: pointer;
               @include after_separator;
 
-              .order-button-circle {
+              &.active .order-button-circle {
                 background-color: #E41317;
                 border-radius: 50%;
                 bottom: 1px;
@@ -246,6 +246,10 @@
                 right: 1px;
                 text-align: center;
                 width: 17px;
+              }
+
+              &:not(.active) .order-button-circle {
+                display: none;
               }
 
               &:after { 

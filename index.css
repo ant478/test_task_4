@@ -183,7 +183,7 @@ a {
             right: 0;
             top: 0;
             bottom: 0; }
-          #page-header .header-content .header-right .search-and-order .order-buttons .order-button .order-button-circle {
+          #page-header .header-content .header-right .search-and-order .order-buttons .order-button.active .order-button-circle {
             background-color: #E41317;
             border-radius: 50%;
             bottom: 1px;
@@ -196,6 +196,8 @@ a {
             right: 1px;
             text-align: center;
             width: 17px; }
+          #page-header .header-content .header-right .search-and-order .order-buttons .order-button:not(.active) .order-button-circle {
+            display: none; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button:after {
             bottom: 2px;
             right: -4px; }
