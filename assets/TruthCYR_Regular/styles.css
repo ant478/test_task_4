@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'TruthCYR-Regular';
+  src: url('TruthCYR-Regular.eot?#iefix') format('embedded-opentype'),  url('TruthCYR-Regular.otf')  format('opentype'),
+	     url('TruthCYR-Regular.woff') format('woff'), url('TruthCYR-Regular.ttf')  format('truetype'), url('TruthCYR-Regular.svg#TruthCYR-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
