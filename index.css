@@ -1,3 +1,5 @@
+/* mixins */
+/* general */
 html,
 body {
   margin: 0;
@@ -14,6 +16,7 @@ a {
   src: url("assets/TruthCYR_Regular/TruthCYR-Regular.eot?#iefix") format("embedded-opentype"), url("assets/TruthCYR_Regular/TruthCYR-Regular.otf") format("opentype"), url("assets/TruthCYR_Regular/TruthCYR-Regular.woff") format("woff"), url("assets/TruthCYR_Regular/TruthCYR-Regular.ttf") format("truetype"), url("assets/TruthCYR_Regular/TruthCYR-Regular.svg#TruthCYR-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+/* page elements */
 #page-container {
   margin: 0 auto;
   width: 991px;
@@ -31,7 +34,6 @@ a {
     width: 457px;
     padding-top: 4px; }
     #page-header .header-content .header-left .header-logo {
-      background: transparent url("assets/logo.png") repeat scroll 0 0;
       float: left;
       height: 50px;
       margin-left: 1px;
@@ -101,7 +103,7 @@ a {
             color: #9b9da3;
             font-size: 11px; }
           #page-header .header-content .header-left .call-info .call-content .call-long-number .call-number-main {
-            color: black;
+            color: #000;
             font-size: 16px;
             margin-left: 2px; }
         #page-header .header-content .header-left .call-info .call-content .call-link {
@@ -243,10 +245,166 @@ a {
   color: #000; }
 
 #page-footer {
-  background-color: #bbb;
+  border-top: 1px solid #dbdbdb;
   bottom: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   height: 189px;
+  padding-top: 27px;
   position: absolute;
   width: 100%; }
+  #page-footer .static-part {
+    float: right; }
+    #page-footer .static-part .social-links {
+      display: inline-block;
+      float: left;
+      margin-right: 40px;
+      width: 120px; }
+      #page-footer .static-part .social-links .social-link {
+        display: inline-block;
+        padding: 0 3px 11px; }
+        #page-footer .static-part .social-links .social-link > a {
+          color: #000;
+          height: 23px;
+          width: 23px;
+          background: url("assets/social-sprites.png");
+          display: block; }
+        #page-footer .static-part .social-links .social-link.vk > a {
+          background-position: 0px 0px; }
+        #page-footer .static-part .social-links .social-link.twitter > a {
+          background-position: -29px 0; }
+        #page-footer .static-part .social-links .social-link.facebook > a {
+          background-position: -58px 0; }
+        #page-footer .static-part .social-links .social-link.odclass > a {
+          background-position: -87px 0; }
+        #page-footer .static-part .social-links .social-link.googpl > a {
+          background-position: 0 24px; }
+        #page-footer .static-part .social-links .social-link.youtube > a {
+          background-position: -29px 24px; }
+        #page-footer .static-part .social-links .social-link.unknown > a {
+          background-position: -58px 24px; }
+        #page-footer .static-part .social-links .social-link.instagram > a {
+          background-position: -87px 24px; }
+    #page-footer .static-part .phone-info {
+      display: inline-block;
+      float: left;
+      width: 230px; }
+      #page-footer .static-part .phone-info .phone1 {
+        margin-top: -3px; }
+        #page-footer .static-part .phone-info .phone1 .short-number {
+          color: #000000;
+          display: inline-block;
+          font-size: 16px;
+          padding-left: 16px;
+          position: relative;
+          margin-left: 5px; }
+          #page-footer .static-part .phone-info .phone1 .short-number:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: 21px;
+            width: 1px;
+            background-color: #e6e6e6;
+            margin: auto;
+            right: 0;
+            top: 0;
+            bottom: 0; }
+          #page-footer .static-part .phone-info .phone1 .short-number:after {
+            right: -18px; }
+          #page-footer .static-part .phone-info .phone1 .short-number:before {
+            background: transparent url("assets/sprites.png") no-repeat scroll center -227px;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 13px;
+            left: 0;
+            margin: auto 0;
+            position: absolute;
+            top: 1px;
+            width: 12px; }
+        #page-footer .static-part .phone-info .phone1 .long-number {
+          display: inline-block;
+          position: relative;
+          color: #000;
+          font-size: 16px;
+          margin-left: 31px; }
+        #page-footer .static-part .phone-info .phone1 .info {
+          color: #9b9da3;
+          display: inline-block;
+          font-size: 11px;
+          font-weight: lighter;
+          margin-left: 4px;
+          margin-top: 1px; }
+      #page-footer .static-part .phone-info .phone2 {
+        margin-top: 13px; }
+        #page-footer .static-part .phone-info .phone2 .long-number {
+          display: inline-block;
+          margin-left: 2px;
+          position: relative;
+          color: #000;
+          font-size: 16px; }
+        #page-footer .static-part .phone-info .phone2 .info {
+          color: #9b9da3;
+          display: inline-block;
+          font-size: 11px;
+          font-weight: lighter;
+          margin-left: 3px;
+          margin-top: 1px; }
+      #page-footer .static-part .phone-info .time-info {
+        color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        font-size: 11px;
+        font-weight: lighter;
+        line-height: 13px;
+        margin-left: 3px;
+        margin-top: 16px; }
+  #page-footer .other-info {
+    overflow: hidden; }
+    #page-footer .other-info .internal-links {
+      color: #000; }
+      #page-footer .other-info .internal-links .internal-link {
+        display: inline-block;
+        height: 25px;
+        padding-right: 19px; }
+        #page-footer .other-info .internal-links .internal-link > a {
+          font-size: 11px;
+          color: #009de0;
+          cursor: pointer; }
+          #page-footer .other-info .internal-links .internal-link > a:hover {
+            color: #e41317; }
+    #page-footer .other-info .company-info {
+      font-size: 11px;
+      margin-top: 13px;
+      line-height: 13px;
+      color: rgba(0, 0, 0, 0.702); }
+    #page-footer .other-info .payment-info {
+      margin-top: 17px; }
+      #page-footer .other-info .payment-info .payment-option {
+        display: inline-block; }
+        #page-footer .other-info .payment-info .payment-option > a {
+          height: 30px;
+          background: url("assets/payment-sprites.png");
+          display: block; }
+        #page-footer .other-info .payment-info .payment-option.visa > a {
+          background-position: 0px 0px;
+          width: 32px; }
+        #page-footer .other-info .payment-info .payment-option.vervisa > a {
+          background-position: -32px 0;
+          width: 32px; }
+        #page-footer .other-info .payment-info .payment-option.mcard > a {
+          background-position: -64px 0;
+          width: 35px; }
+        #page-footer .other-info .payment-info .payment-option.mcards > a {
+          background-position: -100px 0;
+          width: 32px; }
+        #page-footer .other-info .payment-info .payment-option.belcard > a {
+          background-position: -132px 0;
+          width: 36px; }
+        #page-footer .other-info .payment-info .payment-option.easypay > a {
+          background-position: -168px 0;
+          width: 53px; }
+        #page-footer .other-info .payment-info .payment-option.raschet > a {
+          background-position: 38px 0;
+          width: 38px; }
 
 /*# sourceMappingURL=index.css.map */

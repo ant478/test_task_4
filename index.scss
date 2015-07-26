@@ -1,3 +1,4 @@
+/* mixins */
   @mixin vertical_centering {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -36,7 +37,7 @@
       background-color: #e41317;
     }
   }
-
+/* general */
   html,
   body {
     margin: 0;
@@ -61,7 +62,7 @@
     font-style: normal;
   }
 
-
+/* page elements */
   #page-container {
       margin: 0 auto;
       width: 991px;
@@ -73,8 +74,7 @@
       -moz-box-sizing: border-box;
   }
 
-  #page-header {
-    
+  #page-header {   
 
     .header-content {
       overflow: hidden;
@@ -85,7 +85,6 @@
         padding-top: 4px;
 
         .header-logo {
-          background: transparent url("assets/logo.png") repeat scroll 0 0;
           float: left;
           height: 50px;
           margin-left: 1px;
@@ -146,7 +145,7 @@
               }
 
               .call-number-main {
-                color: black;
+                color: #000;
                 font-size: 16px;
                 margin-left: 2px;           
               }
@@ -305,9 +304,203 @@
   }
 
   #page-footer {
-    background-color: #bbb;
+    border-top: 1px solid #dbdbdb;
     bottom: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
     height: 189px;
+    padding-top: 27px;
     position: absolute;
     width: 100%;
+
+    .static-part {
+      float: right;
+
+      .social-links {
+        display: inline-block;
+        float: left;
+        margin-right: 40px;
+        width: 120px;
+
+        .social-link {
+          display: inline-block;
+          padding: 0 3px 11px;
+
+          & > a { 
+            color: #000;
+            height: 23px;
+            width: 23px;
+            background: url('assets/social-sprites.png');
+            display: block;
+          }
+
+          &.vk > a { background-position: 0px 0px }
+          &.twitter > a { background-position: -29px 0; }
+          &.facebook > a { background-position: -58px 0; }
+          &.odclass > a { background-position: -87px 0; }
+          &.googpl > a { background-position: 0 24px; }
+          &.youtube > a { background-position: -29px 24px; }
+          &.unknown > a { background-position: -58px 24px; }
+          &.instagram > a { background-position: -87px 24px; }
+        }
+      }
+
+      .phone-info {
+        display: inline-block;
+        float: left;
+        width: 230px;
+
+        .phone1 {
+          margin-top: -3px;
+
+          .short-number {
+            color: #000000;
+            display: inline-block;
+            font-size: 16px;
+            padding-left: 16px;
+            position: relative;
+            margin-left: 5px;
+            @include after_separator;
+            &:after { right: -18px; }
+
+            &:before {
+              background: transparent url("assets/sprites.png") no-repeat scroll center -227px;
+              bottom: 0;
+              content: "";
+              display: block;
+              height: 13px;
+              left: 0;
+              margin: auto 0;
+              position: absolute;
+              top: 1px;
+              width: 12px;
+            }
+          }
+
+          .long-number {
+            display: inline-block;
+            position: relative;
+            color: #000;
+            font-size: 16px;
+            margin-left: 31px;
+          }
+
+          .info {
+            color: #9b9da3;
+            display: inline-block;
+            font-size: 11px;
+            font-weight: lighter;
+            margin-left: 4px;
+            margin-top: 1px;
+          }
+        }
+
+        .phone2 {
+          margin-top: 13px;
+
+          .long-number {
+            display: inline-block;
+            margin-left: 2px;
+            position: relative;
+            color: #000;
+            font-size: 16px;
+          }
+
+          .info {
+            color: #9b9da3;
+            display: inline-block;
+            font-size: 11px;
+            font-weight: lighter;
+            margin-left: 3px;
+            margin-top: 1px;
+          }
+        }
+
+        .time-info {
+          color: rgba(0, 0, 0, 0.7);
+          display: inline-block;
+          font-size: 11px;
+          font-weight: lighter;
+          line-height: 13px;
+          margin-left: 3px;
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .other-info {
+      overflow: hidden;
+
+      .internal-links {
+        color: #000;
+
+        .internal-link {
+          display: inline-block;
+          height: 25px;
+          padding-right: 19px;
+
+          & > a {
+            font-size: 11px;
+            color: rgb(0, 157, 224);
+            @include hover_color_red;
+          }
+        }
+      }
+
+      .company-info {
+        font-size: 11px;
+        margin-top: 13px;
+        line-height: 13px;
+        color: rgba(0, 0, 0, 0.702);
+      }
+
+      .payment-info {
+        margin-top: 17px;
+
+        .payment-option {
+          display: inline-block;
+
+          & > a {
+            height: 30px;
+            background: url('assets/payment-sprites.png');
+            display: block;
+          }
+
+          &.visa > a { 
+            background-position: 0px 0px;
+            width: 32px;
+          }
+
+          &.vervisa > a { 
+            background-position: -32px 0; 
+            width: 32px;
+          }
+
+          &.mcard > a { 
+            background-position: -64px 0; 
+            width: 35px;
+          }
+
+          &.mcards > a { 
+            background-position: -100px 0;
+            width: 32px;
+          }
+
+          &.belcard > a { 
+            background-position: -132px 0;
+            width: 36px;
+          }
+
+          &.easypay > a { 
+            background-position: -168px 0;
+            width: 53px;
+          }
+
+          &.raschet > a { 
+            background-position: 38px 0;
+            width: 38px;
+          }
+        }
+      }
+    }
   }
