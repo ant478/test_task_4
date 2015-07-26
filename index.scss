@@ -89,6 +89,7 @@
           height: 50px;
           margin-left: 1px;
           width: 100px;
+          border: none;
         }
 
         .call-info {
@@ -200,6 +201,10 @@
               height: 29px;
               padding: 0 31px 0 8px;
               font-family: 'TruthCYR-Regular';
+              box-shadow: none;
+              border: 1px solid #dddddd;
+              border-radius: 3px;
+              outline: none;
               &::-webkit-inpbt-placeholder { color: #b8b8b8; }
               &:-moz-placeholder { color: #b8b8b8; opacity:  1; }
               &::-moz-placeholder { color: #b8b8b8; opacity:  1; }
@@ -275,7 +280,9 @@
       height: 41px;
       margin-top: 11px;
       padding: 0 9px;
-      width: calc(100% - 18px);
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
 
       .top-menu-element {
         display: table-cell;

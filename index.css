@@ -37,7 +37,8 @@ a {
       float: left;
       height: 50px;
       margin-left: 1px;
-      width: 100px; }
+      width: 100px;
+      border: none; }
     #page-header .header-content .header-left .call-info {
       overflow: hidden; }
       #page-header .header-content .header-left .call-info .call-title {
@@ -143,7 +144,11 @@ a {
           -moz-box-sizing: border-box;
           height: 29px;
           padding: 0 31px 0 8px;
-          font-family: 'TruthCYR-Regular'; }
+          font-family: 'TruthCYR-Regular';
+          box-shadow: none;
+          border: 1px solid #dddddd;
+          border-radius: 3px;
+          outline: none; }
           #page-header .header-content .header-right .search-and-order .search-field-wraper .search-field::-webkit-inpbt-placeholder {
             color: #b8b8b8; }
           #page-header .header-content .header-right .search-and-order .search-field-wraper .search-field:-moz-placeholder {
@@ -223,7 +228,9 @@ a {
   height: 41px;
   margin-top: 11px;
   padding: 0 9px;
-  width: calc(100% - 18px); }
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
   #page-header #top-menu .top-menu-element {
     display: table-cell;
     font-size: 13px;
