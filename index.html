@@ -159,16 +159,16 @@
 
         <div class = 'price'>
           <h3 class = 'block-header'> Цена (рубли) </h3>
-          <div class = 'slider-wraper'>
-            <input class = 'min-price' type = 'text' name = 'min-price' value = 'От 1332200'>
+          <div class = 'aside-range-slider'>
+            <input class = 'min-price' type = 'text' name = 'min-price' value = 'От 1332200' readonly>
             <span class = 'minus'>-</span> 
-            <input class = 'max-price' type = 'text' name = 'max-price' value = 'до 19890000'>
-            <div class = 'price-slider aside-range-slider'></div>
+            <input class = 'max-price' type = 'text' name = 'max-price' value = 'до 19890000' readonly>
+            <div class = 'slider'></div>
           </div>
         </div>
 
         <div class = 'screen-type'>
-          <h3 class = 'block-header'> Тип экрана </h3>
+          <h3 class = 'block-header'> Тип корпуса </h3>
           <div class = 'select-wraper  aside-select'>
             <input type = 'text' class = 'selected-option' value = 'Любой' data-selected-index = '0' readonly>
             <div class = 'all-options'>
@@ -182,22 +182,61 @@
 
         <div class = 'diagonal'>
           <h3 class = 'block-header'> Диагональ (дюйм) </h3>
-          <div class = 'slider-wraper'>
-            <input class = 'min-price' type = 'text' name = 'min-price' value = 'От 1'>
+          <div class = 'aside-range-slider'>
+            <input class = 'min-price' type = 'text' name = 'min-price' value = 'От 1' readonly>
             <span class = 'minus'>-</span> 
-            <input class = 'max-price' type = 'text' name = 'max-price' value = 'до 5'>
-            <div class = 'diagonal-slider aside-range-slider'></div>
+            <input class = 'max-price' type = 'text' name = 'max-price' value = 'до 5' readonly>
+            <div class = 'slider'></div>
           </div>
         </div>
 
         <div class = 'resolution'>
           <h3 class = 'block-header'> Разрешение фотокамеры (мпикс) </h3>
-          <div class = 'slider-wraper'>
-            <input class = 'min-price' type = 'text' name = 'min-price' value = 'От 1'>
+          <div class = 'aside-range-slider'>
+            <input class = 'min-price' type = 'text' name = 'min-price' value = 'От 1' readonly>
             <span class = 'minus'>-</span> 
             <input class = 'max-price' type = 'text' name = 'max-price' value = 'до 12'>
-            <div class = 'resolution-slider aside-range-slider'></div>
+            <div class = 'slider'></div>
           </div>
+        </div>
+
+        <div class = "other-options">
+          <h3 class = 'block-header'> Опции </h3>
+          <div class = 'other-options-checkboxes'>
+            <div class = 'checkbox-wraper aside-checkbox'>
+              <input type = 'checkbox' name = 'other-options' id = 'other-options0' value = 'Поддержка нескольких SIM'>
+              <label for = 'other-options0'>Поддержка нескольких SIM</label>
+            </div>
+
+            <div class = 'checkbox-wraper aside-checkbox'>
+              <input type = 'checkbox' name = 'other-options' id = 'other-options1' value = 'Фронтальная камера'>
+              <label for = 'other-options1'>Фронтальная камера</label>
+            </div>
+
+            <div class = 'checkbox-wraper aside-checkbox'>
+              <input type = 'checkbox' name = 'other-options' id = 'other-options2' value = 'Аудиоплеер'>
+              <label for = 'other-options2'>Аудиоплеер</label>
+            </div>
+
+            <div class = 'checkbox-wraper aside-checkbox'>
+              <input type = 'checkbox' name = 'other-options' id = 'other-options3' value = 'Навигация GPS'>
+              <label for = 'other-options3'>Навигация GPS</label>
+            </div>
+
+            <div class = 'checkbox-wraper aside-checkbox'>
+              <input type = 'checkbox' name = 'other-options' id = 'other-options4' value = 'Wi-Fi'>
+              <label for = 'other-options4'>Wi-Fi</label>
+            </div>
+          </div>
+        </div>
+
+        <div class = 'expand-button'>
+          <span>Расширенный фильтр <span class = 'arrow'>&#9660</span></span>
+        </div>
+
+        <div class = 'show-reset-buttons'>
+          <span class = 'show-button button'>Показать</span>
+          <span class = 'reset-button button'>Сбросить</span>
         </div>
 
       </aside>

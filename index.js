@@ -1,6 +1,6 @@
 $(document).ready(function () {  
   $(function() {
-    $( ".price-slider" ).slider({
+    $( ".price .slider" ).slider({
       range: true,
       min: 1332200,
       max: 19890000,
@@ -12,7 +12,7 @@ $(document).ready(function () {
       }
     });
 
-    $( ".diagonal-slider" ).slider({
+    $( ".diagonal .slider" ).slider({
       range: true,
       min: 1,
       max: 5,
@@ -24,7 +24,7 @@ $(document).ready(function () {
       }
     });
 
-    $( ".resolution-slider" ).slider({
+    $( ".resolution .slider" ).slider({
       range: true,
       min: 1,
       max: 12,
