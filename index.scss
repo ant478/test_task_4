@@ -47,6 +47,11 @@
     font-size: 0;
   }
 
+  h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: normal; 
+  }
+
   a {
     text-decoration: none;
   }
@@ -70,6 +75,7 @@
       min-height: 100%;
       padding-top: 20px;
       padding-bottom: 189px;
+      overflow: hidden;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
   }
@@ -303,11 +309,199 @@
   }
 
   #page-sidebar {
-    color: #fff;
+    background-color: #e8e9ea;
+    float: right;
+    padding: 10px;
+    width: 226px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    .producers {
+      .producers-checkboxes {
+        color: #000;
+      }
+    }
+
+    .to-show {
+      color: #000;
+
+      .to-show-checkboxes {
+        color: #000;
+      }
+    }
+
+    .price {
+
+      .slider-wraper {
+        margin-top: 10px;
+
+        .min-price, .max-price {
+          font-size: 11px;
+          width: 48%;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          height: 29px;
+          padding: 0 31px 0 8px;
+          font-family: 'TruthCYR-Regular';
+          box-shadow: none;
+          border: 1px solid #dddddd;
+          border-radius: 3px;
+          outline: none;
+        }
+
+        .minus {
+          color: #000;
+          font-size: 11px;
+          width: 4%;
+        }
+
+        .price-slider {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .screen-type {
+      width: auto;
+
+      h3 {
+        font-size: 11px;
+        color: #000000;
+        text-align: left;
+        display: block;
+        font-weight: bold;
+      }
+
+      .select-wraper {
+        
+      }
+    }
+
+    .diagonal {
+
+    }
+
+    .block-header {
+      font-size: 11px;
+      color: #000000;
+      text-align: left;
+      display: block;
+      font-weight: bold;
+    }
+
+    .aside-checkbox {
+      display: inline-block;
+      padding: 10px 10px 10px 20px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+
+      input {
+        display: none;
+      }
+
+      label {
+        font-size: 11px;
+        color: #000000;
+        font-weight: lighter;
+      }
+
+      label:before {
+        background-color: #fff;
+        border: 1px solid #dddddd;
+        border-radius: 2px;
+        content: "";
+        display: block;
+        height: 10px;
+        left: 0;
+        position: absolute;
+        width: 10px;
+      }
+
+      label:after {
+        border-bottom: 2px solid #000;
+        border-left: 2px solid #000;
+        bottom: 3px;
+        content: "";
+        display: none;
+        height: 3px;
+        left: 2px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 5px;
+      }
+
+      input:checked + label:after {
+        display: block;
+      }
+    }
+
+    .aside-range-slider {
+      border: medium none;
+      height: 2px;
+      position: relative;
+
+      .ui-slider-range {
+        background: #e41317 none repeat scroll 0 0;
+      }
+
+      .ui-slider-handle {
+        background: #000 none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 50%;
+        height: 8px;
+        top: -3px;
+        width: 8px;
+      }
+    }
+
+    .aside-select {
+      width: 100%;
+      position: relative;
+
+      .selected-option {
+        font-size: 11px;
+        font-family: 'TruthCYR-Regular';
+        border: 1px solid #aaaaaa;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: medium none;
+        width: 100%;
+        background: #fff url("assets/arrow.png") no-repeat scroll 97% center / 6px auto;
+      }
+
+      .selected-option:focus + .all-options {
+        display: block;
+      }
+
+      .all-options {
+        background-color: #fff;
+        border: 1px solid #aaa;
+        height: auto;
+        position: absolute;
+        display: none;
+        width: 100%;
+        z-index: 10;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+
+        .option {
+          font-size: 11px;
+          height: 18px;
+
+          &:hover {
+            background-color: #bbb;
+          }
+        }
+      }
+    }
   }
 
   #page-content {
-    color: #000;
   }
 
   #page-footer {
