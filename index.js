@@ -46,4 +46,14 @@ $(document).ready(function () {
     selected.attr('data-selected-index', option.attr('data-option-index'));
   });
 
+  $('.selected-option').click( function(event) {
+    $(this).siblings('.all-options').toggle();
+  });
+
+  $('.custom-select .option').click(function(event) {
+    $(this).parent().parent().find('.selected-option').html($(this).html());
+    $(this).parent().parent().find('.hidden-value').val($(this).attr('data-index'));
+    $(this).parent().parent().find('.all-options').hide();
+  });
+
 });
