@@ -675,6 +675,7 @@
 
     .page-header {
       position: relative;
+      margin-bottom: 50px;
 
       &:after {
         background-color: #e6e6e6;
@@ -739,6 +740,107 @@
       }
     }
 
+    .page-products {
+      width: auto;
+
+      .product {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: inline-block;
+        height: 250px;
+        margin-right: 20px;
+        position: relative;
+        width: calc(33% - 20px);
+
+        .product-image {
+          float: left;
+          height: 190px;
+          width: 100px;
+
+          img {
+            width: auto;
+          }
+        }
+        .product-right-side {
+          overflow: hidden;
+          padding-left: 8px;
+          padding-top: 10px;
+          width: auto;
+
+          h2 {
+            a {
+              font-size: 16px;
+              color: #009de0;
+              line-height: 18px;
+            }
+          }
+
+          .thats-my-red-star { 
+            background: url("assets/stars-background.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+            height: 13px;
+            width: 65px;
+
+            .stars {
+              background: url("assets/stars.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+              height: 13px;
+              width: 65px;
+            }
+          }
+
+          .product-options {
+            width: auto;
+
+            .product-option {
+              font-size: 11px;
+              color: #000;            
+            }
+          }
+        }
+
+        .product-price-and-buttons {
+          float: left;
+          padding-left: 8px;
+          width: 100%;
+
+          .price {
+            font-size: 16px;
+            color: #000;
+          }
+
+          .weighter {
+            background: url("assets/sprites.png") no-repeat scroll center -63px rgba(0, 0, 0, 0);
+            cursor: pointer;
+            display: inline-block;
+            height: 30px;
+            margin: 0 5px;
+            position: relative;
+            width: 40px;
+            float: right;
+
+            &:hover { background-position: center -97px; }
+          }
+
+          .buy {
+            background: url("assets/sprites.png") no-repeat scroll center -130px rgba(0, 0, 0, 0);
+            cursor: pointer;
+            display: inline-block;
+            height: 30px;
+            margin: 0 5px;
+            position: relative;
+            width: 40px;
+            float: right;
+
+            &:hover { background-position: center -163px; }
+          }
+
+          .price-currency {
+            font-size: 11px;
+            color: #737373;
+          }
+        }
+      }
+    }
+
     .custom-select {
       display: inline-block;
       margin-left: 3px;
@@ -746,6 +848,7 @@
       .selected-option {
         font-size: 11px;
         color: #009de0;
+        cursor: pointer;
       }
 
       .all-options {

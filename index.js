@@ -44,13 +44,15 @@ $(document).ready(function () {
     selected.attr('value', option.html());
     selected.val(option.html());
     selected.attr('data-selected-index', option.attr('data-option-index'));
+    selected.parent().find('.all-options').hide();
+
   });
 
   $('.selected-option').click( function(event) {
     $(this).siblings('.all-options').toggle();
   });
 
-  $('.custom-select .option').click(function(event) {
+  $('.custom-select .option').click( function(event) {
     $(this).parent().parent().find('.selected-option').html($(this).html());
     $(this).parent().parent().find('.hidden-value').val($(this).attr('data-index'));
     $(this).parent().parent().find('.all-options').hide();
