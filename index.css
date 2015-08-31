@@ -82,11 +82,11 @@ a {
           #page-header .header-content .header-left .call-info .call-content .call-short-number:after {
             right: -11px; }
           #page-header .header-content .header-left .call-info .call-content .call-short-number:before {
-            background: transparent url("assets/sprites.png") no-repeat scroll center -227px;
+            background: transparent url("assets/sprites.png") no-repeat scroll center -226px;
             bottom: 0;
             content: "";
             display: block;
-            height: 13px;
+            height: 15px;
             left: 0;
             margin: auto 0;
             position: absolute;
@@ -227,11 +227,11 @@ a {
             background-position: center -32px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter {
             background: transparent url("assets/sprites.png") no-repeat scroll center -63px; }
-          #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter.active {
+          #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter.active, #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter:hover {
             background-position: center -97px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy {
             background: transparent url("assets/sprites.png") no-repeat scroll center -130px; }
-          #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy.active {
+          #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy.active, #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy:hover {
             background-position: center -163px; }
 #page-header #top-menu {
   background-color: #5c5e64;
@@ -505,7 +505,8 @@ a {
       width: calc(100% - 2px);
       height: 23px;
       margin-top: 16px;
-      padding: 0 8px; }
+      padding: 0 8px;
+      border-radius: 2px; }
       #page-sidebar .aside-select .selected-option:hover {
         border-color: #f87f82; }
     #page-sidebar .aside-select .selected-option:focus + .all-options {
@@ -921,16 +922,16 @@ a {
           #page-footer .static-part .phone-info .phone1 .short-number:after {
             right: -18px; }
           #page-footer .static-part .phone-info .phone1 .short-number:before {
-            background: transparent url("assets/sprites.png") no-repeat scroll center -227px;
+            background: transparent url("assets/sprites.png") no-repeat scroll center -226px;
             bottom: 0;
             content: "";
             display: block;
-            height: 13px;
+            height: 14px;
             left: 0;
             margin: auto 0;
             position: absolute;
             top: 1px;
-            width: 12px; }
+            width: 13px; }
         #page-footer .static-part .phone-info .phone1 .long-number {
           display: inline-block;
           position: relative;

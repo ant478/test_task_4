@@ -133,11 +133,11 @@
               &:after { right: -11px; }
 
               &:before {
-                background: transparent url("assets/sprites.png") no-repeat scroll center -227px;
+                background: transparent url("assets/sprites.png") no-repeat scroll center -226px;
                 bottom: 0;
                 content: "";
                 display: block;
-                height: 13px;
+                height: 15px;
                 left: 0;
                 margin: auto 0;
                 position: absolute;
@@ -278,9 +278,9 @@
               &.profile { background: transparent url("assets/sprites.png") no-repeat scroll center -1px }
               &.profile:hover { background-position: center -32px }
               &.weighter { background: transparent url("assets/sprites.png") no-repeat scroll center -63px }
-              &.weighter.active { background-position: center -97px }
+              &.weighter.active, &.weighter:hover { background-position: center -97px }
               &.buy { background: transparent url("assets/sprites.png") no-repeat scroll center -130px }
-              &.buy.active { background-position: center -163px }              
+              &.buy.active, &.buy:hover { background-position: center -163px }              
             }
           }
         }
@@ -661,6 +661,7 @@
           height: 23px;
           margin-top: 16px;
           padding: 0 8px;
+          border-radius: 2px;
 
           &:hover { border-color: #f87f82; }
         }
@@ -1181,16 +1182,16 @@
             &:after { right: -18px; }
 
             &:before {
-              background: transparent url("assets/sprites.png") no-repeat scroll center -227px;
+              background: transparent url("assets/sprites.png") no-repeat scroll center -226px;
               bottom: 0;
               content: "";
               display: block;
-              height: 13px;
+              height: 14px;
               left: 0;
               margin: auto 0;
               position: absolute;
               top: 1px;
-              width: 12px;
+              width: 13px;
             }
           }
 
