@@ -83,7 +83,6 @@
       min-height: 100%;
       padding-top: 20px;
       padding-bottom: 233px;
-      overflow: hidden;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
   }
@@ -412,14 +411,25 @@
           color: #fff;
           line-height: 25px;
           cursor: pointer;
+          border-radius: 2px;
         }
 
         .show-button {
           background-color: #e41317;
+
+          &:hover {
+            transition: 0.2s linear 0s;
+            background-color: #f34043;
+          }
         }
 
         .reset-button {
           background-color: #cfcfcf;
+
+          &:hover {
+            transition: 0.2s linear 0s;
+            background-color: #b9b9b9;
+          }
         }
       }
 
@@ -555,6 +565,11 @@
           width: 10px;
         }
 
+        label:hover:before {
+          background-color: #ffefe1;
+          border-color: #e1d1c4;
+        }
+
         label:after {
           border-bottom: 2px solid #000;
           border-left: 2px solid #000;
@@ -590,6 +605,8 @@
           border: 1px solid #dddddd;
           border-radius: 3px;
           outline: none;
+
+          &:hover { border-color: #f87f82; }
         }
 
         .minus {
@@ -618,6 +635,11 @@
           height: 7px;
           top: -3px;
           width: 7px;
+          cursor: pointer;
+
+          &.ui-state-hover, &.ui-state-active {
+            background: #cfcfcf none repeat scroll 0 0
+          }
         }
       }
 
@@ -639,6 +661,8 @@
           height: 23px;
           margin-top: 16px;
           padding: 0 8px;
+
+          &:hover { border-color: #f87f82; }
         }
 
         .selected-option:focus + .all-options {
@@ -810,7 +834,7 @@
           overflow: hidden;
           padding-left: 8px;
           padding-top: 10px;
-          width: auto;
+          width: auto;          
 
           h2 {
             text-align: left;
@@ -820,6 +844,7 @@
               color: #009de0;
               line-height: 18px;
               text-align: left;
+              @include hover_color_red;
             }
           }
 
@@ -1056,6 +1081,7 @@
         font-size: 11px;
         color: #009de0;
         cursor: pointer;
+        @include hover_color_red;
       }
 
       .all-options {
@@ -1086,7 +1112,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     height: 189px;
-    padding-top: 27px;
+    padding-top: 37px;
     position: absolute;
     width: 100%;
 
@@ -1206,7 +1232,6 @@
     }
 
     .other-info {
-      overflow: hidden;
 
       .internal-links {
         color: #000;
@@ -1229,6 +1254,7 @@
         margin-top: 15px;
         line-height: 13px;
         color: rgba(0, 0, 0, 0.702);
+        text-indent: -10px;
       }
 
       .payment-info {

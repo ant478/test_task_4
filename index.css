@@ -33,7 +33,6 @@ a {
   min-height: 100%;
   padding-top: 20px;
   padding-bottom: 233px;
-  overflow: hidden;
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
@@ -325,11 +324,18 @@ a {
         font-size: 11px;
         color: #fff;
         line-height: 25px;
-        cursor: pointer; }
+        cursor: pointer;
+        border-radius: 2px; }
       #page-sidebar .controls .show-reset-buttons .show-button {
         background-color: #e41317; }
+        #page-sidebar .controls .show-reset-buttons .show-button:hover {
+          transition: 0.2s linear 0s;
+          background-color: #f34043; }
       #page-sidebar .controls .show-reset-buttons .reset-button {
         background-color: #cfcfcf; }
+        #page-sidebar .controls .show-reset-buttons .reset-button:hover {
+          transition: 0.2s linear 0s;
+          background-color: #b9b9b9; }
     #page-sidebar .controls > div {
       position: relative; }
     #page-sidebar .controls > div:nth-child(n):after {
@@ -427,6 +433,9 @@ a {
       left: 0;
       position: absolute;
       width: 10px; }
+    #page-sidebar .aside-checkbox label:hover:before {
+      background-color: #ffefe1;
+      border-color: #e1d1c4; }
     #page-sidebar .aside-checkbox label:after {
       border-bottom: 2px solid #000;
       border-left: 2px solid #000;
@@ -456,6 +465,8 @@ a {
       border: 1px solid #dddddd;
       border-radius: 3px;
       outline: none; }
+      #page-sidebar .aside-range-slider .min-price:hover, #page-sidebar .aside-range-slider .max-price:hover {
+        border-color: #f87f82; }
     #page-sidebar .aside-range-slider .minus {
       color: #000;
       font-size: 11px;
@@ -475,7 +486,10 @@ a {
       border-radius: 50%;
       height: 7px;
       top: -3px;
-      width: 7px; }
+      width: 7px;
+      cursor: pointer; }
+      #page-sidebar .aside-range-slider .ui-slider-handle.ui-state-hover, #page-sidebar .aside-range-slider .ui-slider-handle.ui-state-active {
+        background: #cfcfcf none repeat scroll 0 0; }
   #page-sidebar .aside-select {
     width: 100%;
     position: relative; }
@@ -492,6 +506,8 @@ a {
       height: 23px;
       margin-top: 16px;
       padding: 0 8px; }
+      #page-sidebar .aside-select .selected-option:hover {
+        border-color: #f87f82; }
     #page-sidebar .aside-select .selected-option:focus + .all-options {
       display: block; }
     #page-sidebar .aside-select .all-options {
@@ -614,7 +630,11 @@ a {
             font-size: 16px;
             color: #009de0;
             line-height: 18px;
-            text-align: left; }
+            text-align: left;
+            cursor: pointer; }
+            #page-content .page-products .product .product-right-side h2 a:hover {
+              color: #e41317;
+              transition: 0.2s linear 0s; }
         #page-content .page-products .product .product-right-side .thats-my-red-star {
           background: url("assets/stars-background.jpg") no-repeat scroll 0 0 transparent;
           height: 13px;
@@ -796,7 +816,11 @@ a {
     #page-content .custom-select .selected-option {
       font-size: 11px;
       color: #009de0;
+      cursor: pointer;
       cursor: pointer; }
+      #page-content .custom-select .selected-option:hover {
+        color: #e41317;
+        transition: 0.2s linear 0s; }
     #page-content .custom-select .all-options {
       border: 1px solid #999;
       margin-left: -8px;
@@ -823,7 +847,7 @@ a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 189px;
-  padding-top: 27px;
+  padding-top: 37px;
   position: absolute;
   width: 100%; }
   #page-footer .static-part {
@@ -931,54 +955,53 @@ a {
         line-height: 13px;
         margin-left: 3px;
         margin-top: 16px; }
-  #page-footer .other-info {
-    overflow: hidden; }
-    #page-footer .other-info .internal-links {
-      color: #000; }
-      #page-footer .other-info .internal-links .internal-link {
-        display: inline-block;
-        height: 24px;
-        padding-right: 19px; }
-        #page-footer .other-info .internal-links .internal-link > a {
-          font-size: 11px;
-          color: #009de0;
-          cursor: pointer; }
-          #page-footer .other-info .internal-links .internal-link > a:hover {
-            color: #e41317;
-            transition: 0.2s linear 0s; }
-    #page-footer .other-info .company-info {
-      font-size: 11px;
-      margin-top: 15px;
-      line-height: 13px;
-      color: rgba(0, 0, 0, 0.702); }
-    #page-footer .other-info .payment-info {
-      margin-top: 17px; }
-      #page-footer .other-info .payment-info .payment-option {
-        display: inline-block; }
-        #page-footer .other-info .payment-info .payment-option > a {
-          height: 30px;
-          background: url("assets/payment-sprites.png");
-          display: block; }
-        #page-footer .other-info .payment-info .payment-option.visa > a {
-          background-position: 0px 0px;
-          width: 32px; }
-        #page-footer .other-info .payment-info .payment-option.vervisa > a {
-          background-position: -32px 0;
-          width: 32px; }
-        #page-footer .other-info .payment-info .payment-option.mcard > a {
-          background-position: -64px 0;
-          width: 35px; }
-        #page-footer .other-info .payment-info .payment-option.mcards > a {
-          background-position: -100px 0;
-          width: 32px; }
-        #page-footer .other-info .payment-info .payment-option.belcard > a {
-          background-position: -132px 0;
-          width: 36px; }
-        #page-footer .other-info .payment-info .payment-option.easypay > a {
-          background-position: -168px 0;
-          width: 53px; }
-        #page-footer .other-info .payment-info .payment-option.raschet > a {
-          background-position: 38px 0;
-          width: 38px; }
+  #page-footer .other-info .internal-links {
+    color: #000; }
+    #page-footer .other-info .internal-links .internal-link {
+      display: inline-block;
+      height: 24px;
+      padding-right: 19px; }
+      #page-footer .other-info .internal-links .internal-link > a {
+        font-size: 11px;
+        color: #009de0;
+        cursor: pointer; }
+        #page-footer .other-info .internal-links .internal-link > a:hover {
+          color: #e41317;
+          transition: 0.2s linear 0s; }
+  #page-footer .other-info .company-info {
+    font-size: 11px;
+    margin-top: 15px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.702);
+    text-indent: -10px; }
+  #page-footer .other-info .payment-info {
+    margin-top: 17px; }
+    #page-footer .other-info .payment-info .payment-option {
+      display: inline-block; }
+      #page-footer .other-info .payment-info .payment-option > a {
+        height: 30px;
+        background: url("assets/payment-sprites.png");
+        display: block; }
+      #page-footer .other-info .payment-info .payment-option.visa > a {
+        background-position: 0px 0px;
+        width: 32px; }
+      #page-footer .other-info .payment-info .payment-option.vervisa > a {
+        background-position: -32px 0;
+        width: 32px; }
+      #page-footer .other-info .payment-info .payment-option.mcard > a {
+        background-position: -64px 0;
+        width: 35px; }
+      #page-footer .other-info .payment-info .payment-option.mcards > a {
+        background-position: -100px 0;
+        width: 32px; }
+      #page-footer .other-info .payment-info .payment-option.belcard > a {
+        background-position: -132px 0;
+        width: 36px; }
+      #page-footer .other-info .payment-info .payment-option.easypay > a {
+        background-position: -168px 0;
+        width: 53px; }
+      #page-footer .other-info .payment-info .payment-option.raschet > a {
+        background-position: 38px 0;
+        width: 38px; }
 
 /*# sourceMappingURL=index.css.map */
