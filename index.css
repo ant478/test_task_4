@@ -558,15 +558,37 @@ a {
       #page-content .page-header .to-show-count .all-options {
         margin-left: -32px; }
   #page-content .page-products {
-    width: auto; }
+    text-align: center; }
     #page-content .page-products .product {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
       display: inline-block;
       height: 250px;
-      margin-right: 20px;
       position: relative;
-      width: calc(33% - 20px); }
+      width: calc(33% - 18px);
+      vertical-align: top; }
+      #page-content .page-products .product:nth-child(3n+1) {
+        float: left; }
+      #page-content .page-products .product:nth-child(3n+2) {
+        float: none; }
+      #page-content .page-products .product:nth-child(3n+3) {
+        float: right; }
+      #page-content .page-products .product .sign {
+        border-radius: 2px;
+        color: #fff;
+        display: inline-block;
+        font-size: 11px;
+        left: 1px;
+        padding: 1px 6px;
+        position: absolute;
+        top: 22px;
+        width: auto; }
+      #page-content .page-products .product .acton {
+        background-color: #e41317; }
+      #page-content .page-products .product .preorder {
+        background-color: #25950b; }
+      #page-content .page-products .product .new {
+        background-color: #950b90; }
       #page-content .page-products .product .product-image {
         float: left;
         height: 190px;
@@ -578,55 +600,89 @@ a {
         padding-left: 8px;
         padding-top: 10px;
         width: auto; }
-        #page-content .page-products .product .product-right-side h2 a {
-          font-size: 16px;
-          color: #009de0;
-          line-height: 18px; }
+        #page-content .page-products .product .product-right-side h2 {
+          text-align: left; }
+          #page-content .page-products .product .product-right-side h2 a {
+            font-size: 16px;
+            color: #009de0;
+            line-height: 18px;
+            text-align: left; }
         #page-content .page-products .product .product-right-side .thats-my-red-star {
           background: url("assets/stars-background.jpg") no-repeat scroll 0 0 transparent;
           height: 13px;
+          margin-left: -2px;
+          margin-top: 6px;
           width: 65px; }
           #page-content .page-products .product .product-right-side .thats-my-red-star .stars {
             background: url("assets/stars.png") no-repeat scroll 0 0 transparent;
             height: 13px;
             width: 65px; }
         #page-content .page-products .product .product-right-side .product-options {
-          width: auto; }
+          text-align: left;
+          margin-top: 15px; }
           #page-content .page-products .product .product-right-side .product-options .product-option {
             font-size: 11px;
-            color: #000; }
+            color: #000;
+            margin-top: 4.5px; }
       #page-content .page-products .product .product-price-and-buttons {
         float: left;
         padding-left: 8px;
         width: 100%; }
+        #page-content .page-products .product .product-price-and-buttons:after {
+          background-color: #e6e6e6;
+          bottom: -40px;
+          content: "";
+          display: block;
+          height: 1px;
+          position: relative;
+          right: 6px;
+          width: 100%; }
         #page-content .page-products .product .product-price-and-buttons .price {
+          color: #000;
+          display: inline-block;
+          float: left;
           font-size: 16px;
-          color: #000; }
+          margin-left: 6px;
+          margin-top: 7px;
+          text-align: left; }
         #page-content .page-products .product .product-price-and-buttons .weighter {
-          background: url("assets/sprites.png") no-repeat scroll center -63px transparent;
+          background: transparent url("assets/sprites.png") no-repeat scroll center -63px/27px auto;
           cursor: pointer;
           display: inline-block;
+          float: right;
           height: 30px;
-          margin: 0 5px;
+          margin-top: 5px;
           position: relative;
-          width: 40px;
-          float: right; }
+          width: 35px; }
           #page-content .page-products .product .product-price-and-buttons .weighter:hover {
-            background-position: center -97px; }
+            background-position: center -96px; }
         #page-content .page-products .product .product-price-and-buttons .buy {
-          background: url("assets/sprites.png") no-repeat scroll center -130px transparent;
+          background: transparent url("assets/sprites.png") no-repeat scroll center -130px;
           cursor: pointer;
           display: inline-block;
+          float: right;
           height: 30px;
-          margin: 0 5px;
+          margin: 3px 12px 0 0;
           position: relative;
-          width: 40px;
-          float: right; }
+          width: 35px; }
           #page-content .page-products .product .product-price-and-buttons .buy:hover {
             background-position: center -163px; }
         #page-content .page-products .product .product-price-and-buttons .price-currency {
           font-size: 11px;
-          color: #737373; }
+          color: #737373;
+          display: inline-block;
+          float: left;
+          margin-left: 5px;
+          margin-top: 12px; }
+      #page-content .page-products .product .old-price {
+        background: transparent url("assets/red_dot.jpg") repeat-x scroll 0 50%;
+        color: #e41317;
+        display: inline-block;
+        float: left;
+        font-size: 11px;
+        margin-left: 14px;
+        margin-top: -10px;
+        text-align: left; }
   #page-content .custom-select {
     display: inline-block;
     margin-left: 3px; }

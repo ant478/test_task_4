@@ -741,16 +741,52 @@
     }
 
     .page-products {
-      width: auto;
+      text-align: center;
 
       .product {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         display: inline-block;
         height: 250px;
-        margin-right: 20px;
         position: relative;
-        width: calc(33% - 20px);
+        width: calc(33% - 18px);
+        vertical-align: top;
+
+        &:nth-child(3n+1) {
+          float: left;
+        }
+
+        &:nth-child(3n+2) {
+          float: none;
+        }
+
+        &:nth-child(3n+3) {
+          float: right;
+        }
+
+        .sign {
+          border-radius: 2px;
+          color: #fff;
+          display: inline-block;
+          font-size: 11px;
+          left: 1px;
+          padding: 1px 6px;
+          position: absolute;
+          top: 22px;
+          width: auto;
+        }
+
+        .acton {
+          background-color: #e41317;
+        }
+
+        .preorder {
+          background-color: #25950b;
+        }
+
+        .new {
+          background-color: #950b90;
+        }
 
         .product-image {
           float: left;
@@ -761,6 +797,7 @@
             width: auto;
           }
         }
+        
         .product-right-side {
           overflow: hidden;
           padding-left: 8px;
@@ -768,16 +805,21 @@
           width: auto;
 
           h2 {
+            text-align: left;
+
             a {
               font-size: 16px;
               color: #009de0;
               line-height: 18px;
+              text-align: left;
             }
           }
 
           .thats-my-red-star { 
             background: url("assets/stars-background.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
             height: 13px;
+            margin-left: -2px;
+            margin-top: 6px;
             width: 65px;
 
             .stars {
@@ -788,11 +830,13 @@
           }
 
           .product-options {
-            width: auto;
+            text-align: left;
+            margin-top: 15px;
 
             .product-option {
               font-size: 11px;
-              color: #000;            
+              color: #000;    
+              margin-top: 4.5px;        
             }
           }
         }
@@ -802,33 +846,49 @@
           padding-left: 8px;
           width: 100%;
 
+          &:after {
+            background-color: #e6e6e6;
+            bottom: -40px;
+            content: "";
+            display: block;
+            height: 1px;
+            position: relative;
+            right: 6px;
+            width: 100%;
+          }
+
           .price {
-            font-size: 16px;
             color: #000;
+            display: inline-block;
+            float: left;
+            font-size: 16px;
+            margin-left: 6px;
+            margin-top: 7px;
+            text-align: left;
           }
 
           .weighter {
-            background: url("assets/sprites.png") no-repeat scroll center -63px rgba(0, 0, 0, 0);
+            background: transparent url("assets/sprites.png") no-repeat scroll center -63px / 27px auto;
             cursor: pointer;
             display: inline-block;
-            height: 30px;
-            margin: 0 5px;
-            position: relative;
-            width: 40px;
             float: right;
+            height: 30px;
+            margin-top: 5px;
+            position: relative;
+            width: 35px;
 
-            &:hover { background-position: center -97px; }
+            &:hover { background-position: center -96px; }
           }
 
           .buy {
-            background: url("assets/sprites.png") no-repeat scroll center -130px rgba(0, 0, 0, 0);
+            background: transparent url("assets/sprites.png") no-repeat scroll center -130px;
             cursor: pointer;
             display: inline-block;
-            height: 30px;
-            margin: 0 5px;
-            position: relative;
-            width: 40px;
             float: right;
+            height: 30px;
+            margin: 3px 12px 0 0;
+            position: relative;
+            width: 35px;
 
             &:hover { background-position: center -163px; }
           }
@@ -836,7 +896,22 @@
           .price-currency {
             font-size: 11px;
             color: #737373;
+            display: inline-block;
+            float: left;
+            margin-left: 5px;
+            margin-top: 12px;
           }
+        }
+
+        .old-price {
+          background: rgba(0, 0, 0, 0) url("assets/red_dot.jpg") repeat-x scroll 0 50%;
+          color: #e41317;
+          display: inline-block;
+          float: left;
+          font-size: 11px;
+          margin-left: 14px;
+          margin-top: -10px;
+          text-align: left;
         }
       }
     }

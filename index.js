@@ -36,6 +36,18 @@ $(document).ready(function () {
       }
     });
 
+    function formatMoney (rawNumber) {
+      var result = rawNumber;
+      for (var i = rawNumber.length - 3; i > 0; i = i - 3) {
+        result = result.substring(0, i) + ' ' + result.substring(i, result.length);
+      }
+      return result;
+    };
+
+    $('.product .price').each(function(){
+      $(this).html(formatMoney($(this).html()));
+    });
+
   });
 
   $('.aside-select .option').mousedown( function(event) {
