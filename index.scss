@@ -82,7 +82,7 @@
       position: relative;
       min-height: 100%;
       padding-top: 20px;
-      padding-bottom: 189px;
+      padding-bottom: 233px;
       overflow: hidden;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -277,7 +277,7 @@
 
               &:nth-last-child(1):after { display: none; }
               &.profile { background: transparent url("assets/sprites.png") no-repeat scroll center -1px }
-              &.profile:hover { background-position: center -31px }
+              &.profile:hover { background-position: center -32px }
               &.weighter { background: transparent url("assets/sprites.png") no-repeat scroll center -63px }
               &.weighter.active { background-position: center -97px }
               &.buy { background: transparent url("assets/sprites.png") no-repeat scroll center -130px }
@@ -326,9 +326,10 @@
       background-color: #e8e9ea;
       overflow: hidden;
       width: 100%;
-      padding: 19px;
+      padding: 25px 19px 28px;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
+      margin-left: -4px;
 
       .producers {
         margin-top: -1px;
@@ -338,7 +339,7 @@
       }
 
       .to-show {
-        margin-top: 17px;
+        margin-top: 18px;
 
         .to-show-checkboxes {
           margin-top: 10px;
@@ -362,7 +363,7 @@
       }
 
       .other-options {
-        margin-top: 14px;
+        margin-top: 16px;
 
         .other-options-checkboxes {
           margin-top: 10px;
@@ -380,6 +381,7 @@
 
       .expand-button {
         margin-top: 13px;
+        margin-left: 2px;
 
         & > span {
           font-size: 11px;
@@ -441,10 +443,11 @@
     }
 
     .present-box {
-      width: 100%;
+      margin-top: 31px;
       position: relative;
       text-align: center;
-      margin-bottom: 50px;
+      width: 100%;
+      top: 10px;
 
       .present-image {
         width: 142px;
@@ -494,7 +497,7 @@
           float: right;
           height: 0;
           position: relative;
-          top: 4px;
+          top: 5px;
           width: 96px;
         }
       }
@@ -626,7 +629,7 @@
         .selected-option {
           font-size: 11px;
           font-family: 'TruthCYR-Regular';
-          border: 1px solid #aaaaaa;
+          border: 1px solid #ddd;
           box-sizing: border-box;
           -moz-box-sizing: border-box;
           outline: medium none;
@@ -672,6 +675,7 @@
     overflow: hidden;
     margin-top: 27px;
     padding-right: 31px;
+    text-align: center;
 
     .page-header {
       position: relative;
@@ -690,6 +694,7 @@
       .page-path {
         font-size: 11px;
         color: #737373;
+        text-align: left;
 
         .path-part {
           color: #000;
@@ -710,6 +715,7 @@
         font-size: 30px;
         color: #000;
         margin-left: -1px;
+        text-align: left;
       }
 
       .sorting-order {
@@ -742,6 +748,7 @@
 
     .page-products {
       text-align: center;
+      padding-top: 1px;
 
       .product {
         box-sizing: border-box;
@@ -751,6 +758,7 @@
         position: relative;
         width: calc(33% - 18px);
         vertical-align: top;
+        margin-bottom: 15px;
 
         &:nth-child(3n+1) {
           float: left;
@@ -797,7 +805,7 @@
             width: auto;
           }
         }
-        
+
         .product-right-side {
           overflow: hidden;
           padding-left: 8px;
@@ -916,6 +924,130 @@
       }
     }
 
+    .pagination {
+      display: inline-block;
+      margin-left: 14px;
+      margin-top: -4px;
+      position: relative;
+
+      .left-arrow {
+        display: inline-block;
+        height: 25px;
+        vertical-align: top;
+        width: 25px;
+        background: rgba(0, 0, 0, 0) url("assets/arrow2.png") no-repeat scroll center center;
+        margin: 0 16px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+
+        &:hover { background: rgba(0, 0, 0, 0) url("assets/arrow2red.png") no-repeat scroll center center; }
+      }
+
+      .right-arrow {
+        display: inline-block;
+        height: 25px;
+        vertical-align: top;
+        width: 25px;
+        background: rgba(0, 0, 0, 0) url("assets/arrow2.png") no-repeat scroll center center;
+        margin: 0 16px;
+
+        &:hover { background: rgba(0, 0, 0, 0) url("assets/arrow2red.png") no-repeat scroll center center; }
+      }
+
+      .page-number {
+        border-radius: 3px;
+        color: #000;
+        display: inline-block;
+        font-size: 16px;
+        height: 25px;
+        line-height: 25px;
+        margin: 0;
+        text-align: center;
+        width: 23px;
+        margin-left: 1px;
+
+        &:hover, &.active { 
+          background-color: #e41317; 
+          color: #fff;
+        }
+      }
+    }
+
+    .top-product {
+      margin-top: 40px;
+      overflow: hidden;
+
+      .red-block {
+        background: #ec1d25;
+        background: -moz-linear-gradient(top, #ec1d25 0%, #bd181f 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec1d25), color-stop(100%,#bd181f));
+        background: -webkit-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
+        background: -o-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
+        background: -ms-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
+        background: linear-gradient(to bottom, #ec1d25 0%,#bd181f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec1d25', endColorstr='#bd181f',GradientType=0 );
+          display: inline-block;
+          float: left;
+          height: 80px;
+          margin-left: 27px;
+          width: 522px;
+
+        &:after {
+          border-color: #fff #fff #fff transparent;
+          border-style: solid;
+          border-width: 41px 0 41px 23px;
+          content: "";
+          display: block;
+          height: 0;
+          margin-left: 499px;
+          margin-top: -74px;
+          width: 0;
+        }
+
+        .text1 {
+          color: #fff;
+          font-size: 19px;
+          letter-spacing: -0.1px;
+          margin-left: 54px;
+          margin-top: 12px;
+          text-align: left;
+        }
+
+        .text2 {
+          color: #fff;
+          font-size: 30px;
+          margin-left: 52px;
+          margin-top: 2px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+      }
+      .product-photo {
+        display: inline-block;
+        float: right;
+        margin-right: 19px;
+        max-height: 80px;
+        max-width: 150px;
+      }
+    }
+
+    .description-text {
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+      margin-top: 38px;
+
+      .text {
+        color: #000;
+        font-size: 11px;
+        line-height: 13.1px;
+      }
+    }
+
     .custom-select {
       display: inline-block;
       margin-left: 3px;
@@ -946,7 +1078,6 @@
         }
       }
     }
-
   }
 
   #page-footer {
@@ -1082,7 +1213,7 @@
 
         .internal-link {
           display: inline-block;
-          height: 25px;
+          height: 24px;
           padding-right: 19px;
 
           & > a {
@@ -1095,7 +1226,7 @@
 
       .company-info {
         font-size: 11px;
-        margin-top: 13px;
+        margin-top: 15px;
         line-height: 13px;
         color: rgba(0, 0, 0, 0.702);
       }
