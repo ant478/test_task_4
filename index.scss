@@ -686,6 +686,7 @@
             height: 21px;
             line-height: 21px;
             padding: 0 8px;
+            cursor: pointer;
 
             &:hover {
               background-color: #bbb;
@@ -732,6 +733,8 @@
           &:nth-last-child(1):after {
             display: none;
           }
+
+          @include hover_color_red;
         }
       }
 
@@ -806,10 +809,11 @@
           position: absolute;
           top: 22px;
           width: auto;
+          cursor: pointer;
         }
 
-        .acton {
-          background-color: #e41317;
+        .action {
+          background-color: #e41317;          
         }
 
         .preorder {
@@ -824,6 +828,11 @@
           float: left;
           height: 190px;
           width: 100px;
+
+          &:hover + .product-right-side > h2 > a {
+            color: #e41317; 
+            transition: 0.2s linear 0s;
+          }
 
           img {
             width: auto;
@@ -1006,57 +1015,62 @@
       margin-top: 40px;
       overflow: hidden;
 
-      .red-block {
-        background: #ec1d25;
-        background: -moz-linear-gradient(top, #ec1d25 0%, #bd181f 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec1d25), color-stop(100%,#bd181f));
-        background: -webkit-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
-        background: -o-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
-        background: -ms-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
-        background: linear-gradient(to bottom, #ec1d25 0%,#bd181f 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec1d25', endColorstr='#bd181f',GradientType=0 );
+      a {
+        display: block;
+        overflow: hidden;
+
+        .red-block {
+          background: #ec1d25;
+          background: -moz-linear-gradient(top, #ec1d25 0%, #bd181f 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec1d25), color-stop(100%,#bd181f));
+          background: -webkit-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
+          background: -o-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
+          background: -ms-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
+          background: linear-gradient(to bottom, #ec1d25 0%,#bd181f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec1d25', endColorstr='#bd181f',GradientType=0 );
+            display: inline-block;
+            float: left;
+            height: 80px;
+            margin-left: 27px;
+            width: 522px;
+
+          &:after {
+            border-color: #fff #fff #fff transparent;
+            border-style: solid;
+            border-width: 43px 0 43px 23px;
+            content: "";
+            display: block;
+            height: 0;
+            margin-left: 499px;
+            margin-top: -76px;
+            width: 0;
+          }
+
+          .text1 {
+            color: #fff;
+            font-size: 19px;
+            letter-spacing: -0.1px;
+            margin-left: 54px;
+            margin-top: 12px;
+            text-align: left;
+          }
+
+          .text2 {
+            color: #fff;
+            font-size: 30px;
+            margin-left: 52px;
+            margin-top: 2px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+        }
+        .product-photo {
           display: inline-block;
-          float: left;
-          height: 80px;
-          margin-left: 27px;
-          width: 522px;
-
-        &:after {
-          border-color: #fff #fff #fff transparent;
-          border-style: solid;
-          border-width: 43px 0 43px 23px;
-          content: "";
-          display: block;
-          height: 0;
-          margin-left: 499px;
-          margin-top: -76px;
-          width: 0;
+          float: right;
+          margin-right: 19px;
+          max-height: 80px;
+          max-width: 150px;
         }
-
-        .text1 {
-          color: #fff;
-          font-size: 19px;
-          letter-spacing: -0.1px;
-          margin-left: 54px;
-          margin-top: 12px;
-          text-align: left;
-        }
-
-        .text2 {
-          color: #fff;
-          font-size: 30px;
-          margin-left: 52px;
-          margin-top: 2px;
-          text-align: left;
-          text-transform: uppercase;
-        }
-      }
-      .product-photo {
-        display: inline-block;
-        float: right;
-        margin-right: 19px;
-        max-height: 80px;
-        max-width: 150px;
       }
     }
 
