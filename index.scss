@@ -1,3 +1,7 @@
+/* color settings */ 
+
+
+
 /* mixins */
   @mixin vertical_centering {
     top: 50%;
@@ -38,6 +42,12 @@
       background-color: #e41317;
       transition: 0.2s linear 0s;
     }
+  }
+
+  @mixin one_line_text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 /* general */
   html,
@@ -317,9 +327,10 @@
   }
 
   #page-sidebar {    
-    float: right;    
-    width: 225px;
+    display: inline-block;
     margin-top: 81px;
+    vertical-align: top;
+    width: 225px;
 
     .controls {
       background-color: #e8e9ea;
@@ -698,10 +709,12 @@
   }
 
   #page-content {
-    overflow: hidden;
+    display: inline-block;
     margin-top: 27px;
     padding-right: 31px;
     text-align: center;
+    vertical-align: top;
+    width: calc(100% - 256px);
 
     .page-header {
       position: relative;
@@ -721,6 +734,7 @@
         font-size: 11px;
         color: #737373;
         text-align: left;
+        @include one_line_text;
 
         .path-part {
           color: #000;
@@ -744,6 +758,7 @@
         color: #000;
         margin-left: -1px;
         text-align: left;
+        @include one_line_text;
       }
 
       .sorting-order {
@@ -844,7 +859,8 @@
           overflow: hidden;
           padding-left: 8px;
           padding-top: 10px;
-          width: auto;          
+          width: auto;
+          max-height: 180px;
 
           h2 {
             text-align: left;
@@ -874,12 +890,13 @@
 
           .product-options {
             text-align: left;
-            margin-top: 15px;
+            margin-top: 15px;            
 
             .product-option {
               font-size: 11px;
               color: #000;    
-              margin-top: 4.5px;        
+              margin-top: 4.5px;
+              @include one_line_text;
             }
           }
         }
@@ -1021,6 +1038,11 @@
         overflow: hidden;
 
         .red-block {
+          display: inline-block;
+          float: left;
+          height: 80px;
+          margin-left: 27px;
+          width: calc(100% - 212px);
           background: #ec1d25;
           background: -moz-linear-gradient(top, #ec1d25 0%, #bd181f 100%);
           background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec1d25), color-stop(100%,#bd181f));
@@ -1029,11 +1051,6 @@
           background: -ms-linear-gradient(top, #ec1d25 0%,#bd181f 100%);
           background: linear-gradient(to bottom, #ec1d25 0%,#bd181f 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec1d25', endColorstr='#bd181f',GradientType=0 );
-            display: inline-block;
-            float: left;
-            height: 80px;
-            margin-left: 27px;
-            width: 522px;
 
           &:after {
             border-color: #fff #fff #fff transparent;
@@ -1042,7 +1059,7 @@
             content: "";
             display: block;
             height: 0;
-            margin-left: 499px;
+            margin-left: calc(100% - 22px);
             margin-top: -76px;
             width: 0;
           }
@@ -1127,7 +1144,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     height: 189px;
-    padding-top: 37px;
+    padding-top: 26px;
     position: absolute;
     width: 100%;
 
