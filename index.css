@@ -225,11 +225,11 @@ a {
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.profile {
             background: transparent url("assets/sprites.png") no-repeat scroll center -1px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.profile:hover {
-            background-position: center -32px; }
+            background-position: center -31px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter {
             background: transparent url("assets/sprites.png") no-repeat scroll center -63px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter.active, #page-header .header-content .header-right .search-and-order .order-buttons .order-button.weighter:hover {
-            background-position: center -97px; }
+            background-position: center -96px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy {
             background: transparent url("assets/sprites.png") no-repeat scroll center -130px; }
           #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy.active, #page-header .header-content .header-right .search-and-order .order-buttons .order-button.buy:hover {
@@ -360,14 +360,16 @@ a {
       width: 142px;
       height: 97px;
       margin: 0 auto;
-      display: block; }
+      display: block;
+      cursor: pointer; }
     #page-sidebar .present-box .present-text {
       background: #ea232a url("assets/logo2.png") no-repeat scroll 4px 41px;
       display: inline-block;
       height: 63px;
       margin-left: -3px;
       position: relative;
-      width: 146px; }
+      width: 146px;
+      cursor: pointer; }
       #page-sidebar .present-box .present-text .text1 {
         color: #fff;
         font-size: 16px;
@@ -387,8 +389,8 @@ a {
         margin-top: 6px;
         text-align: right; }
       #page-sidebar .present-box .present-text:after {
-        border-bottom: 7px solid #fff;
-        border-left: 4px solid transparent;
+        border-bottom: 10px solid #fff;
+        border-left: 7px solid transparent;
         border-right: 0 solid transparent;
         content: "";
         display: block;
@@ -455,7 +457,7 @@ a {
       display: block; }
   #page-sidebar .aside-range-slider {
     margin-top: 8px; }
-    #page-sidebar .aside-range-slider .min-price, #page-sidebar .aside-range-slider .max-price {
+    #page-sidebar .aside-range-slider .min-value, #page-sidebar .aside-range-slider .max-value {
       font-size: 11px;
       width: calc(50% - 4px);
       box-sizing: border-box;
@@ -467,7 +469,7 @@ a {
       border: 1px solid #dddddd;
       border-radius: 3px;
       outline: none; }
-      #page-sidebar .aside-range-slider .min-price:hover, #page-sidebar .aside-range-slider .max-price:hover {
+      #page-sidebar .aside-range-slider .min-value:hover, #page-sidebar .aside-range-slider .max-value:hover {
         border-color: #f87f82; }
     #page-sidebar .aside-range-slider .minus {
       color: #000;
@@ -707,7 +709,7 @@ a {
           position: relative;
           width: 35px; }
           #page-content .page-products .product .product-price-and-buttons .weighter:hover {
-            background-position: center -96px; }
+            background-position: center -95.8px; }
         #page-content .page-products .product .product-price-and-buttons .buy {
           background: transparent url("assets/sprites.png") no-repeat scroll center -130px;
           cursor: pointer;

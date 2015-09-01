@@ -286,9 +286,9 @@
 
               &:nth-last-child(1):after { display: none; }
               &.profile { background: transparent url("assets/sprites.png") no-repeat scroll center -1px }
-              &.profile:hover { background-position: center -32px }
+              &.profile:hover { background-position: center -31px }
               &.weighter { background: transparent url("assets/sprites.png") no-repeat scroll center -63px }
-              &.weighter.active, &.weighter:hover { background-position: center -97px }
+              &.weighter.active, &.weighter:hover { background-position: center -96px }
               &.buy { background: transparent url("assets/sprites.png") no-repeat scroll center -130px }
               &.buy.active, &.buy:hover { background-position: center -163px }              
             }
@@ -475,6 +475,7 @@
         height: 97px;
         margin: 0 auto;
         display: block;
+        cursor: pointer;
       }
 
       .present-text {
@@ -484,6 +485,7 @@
         margin-left: -3px;
         position: relative;
         width: 146px;
+        cursor: pointer;
 
         .text1 {
           color: #fff;
@@ -510,8 +512,8 @@
         }
 
         &:after {
-          border-bottom: 7px solid #fff;
-          border-left: 4px solid transparent;
+          border-bottom: 10px solid #fff;
+          border-left: 7px solid transparent;
           border-right: 0 solid transparent;
           content: "";
           display: block;
@@ -604,7 +606,7 @@
       .aside-range-slider {
         margin-top: 8px;
 
-        .min-price, .max-price {
+        .min-value, .max-value {
           font-size: 11px;
           width: calc(50% - 4px);
           box-sizing: border-box;
@@ -937,7 +939,7 @@
             position: relative;
             width: 35px;
 
-            &:hover { background-position: center -96px; }
+            &:hover { background-position: center -95.8px; }
           }
 
           .buy {
