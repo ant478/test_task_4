@@ -64,7 +64,7 @@ a {
         margin-top: 4px;
         position: relative; }
         #page-header .header-content .header-left .call-info .call-content .call-short-number {
-          color: #000000;
+          color: #000;
           display: inline-block;
           font-size: 16px;
           padding-left: 18px;
@@ -133,7 +133,6 @@ a {
   #page-header .header-content .header-right {
     overflow: hidden; }
     #page-header .header-content .header-right .header-links {
-      color: #000;
       padding-right: 164px;
       text-align: right; }
       #page-header .header-content .header-right .header-links .header-link > a {
@@ -206,7 +205,7 @@ a {
             background-color: #E41317;
             border-radius: 50%;
             bottom: 1px;
-            color: #FFFFFF;
+            color: #fff;
             display: block;
             font-size: 11px;
             height: 17px;
@@ -401,7 +400,6 @@ a {
         width: 96px; }
   #page-sidebar .block-header {
     font-size: 11px;
-    color: #000000;
     text-align: left;
     display: block;
     font-weight: lighter; }
@@ -420,7 +418,6 @@ a {
       display: none; }
     #page-sidebar .aside-checkbox label {
       font-size: 11px;
-      color: #000000;
       font-weight: lighter;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -429,7 +426,7 @@ a {
       display: block; }
     #page-sidebar .aside-checkbox label:before {
       background-color: #fff;
-      border: 1px solid #dddddd;
+      border: 1px solid #ddd;
       border-radius: 2px;
       content: "";
       display: block;
@@ -466,13 +463,12 @@ a {
       padding: 0 8px;
       font-family: 'TruthCYR-Regular';
       box-shadow: none;
-      border: 1px solid #dddddd;
+      border: 1px solid #ddd;
       border-radius: 3px;
       outline: none; }
       #page-sidebar .aside-range-slider .min-value:hover, #page-sidebar .aside-range-slider .max-value:hover {
         border-color: #f87f82; }
     #page-sidebar .aside-range-slider .minus {
-      color: #000;
       font-size: 11px;
       width: 7px;
       display: inline-block; }
@@ -533,7 +529,7 @@ a {
         padding: 0 8px;
         cursor: pointer; }
         #page-sidebar .aside-select .all-options .option:hover {
-          background-color: #bbb; }
+          background-color: #aside_select_all_options_hover_border_color; }
 
 #page-content {
   display: inline-block;
@@ -555,7 +551,6 @@ a {
       width: 100%; }
     #page-content .page-header .page-path {
       font-size: 11px;
-      color: #737373;
       text-align: left;
       white-space: nowrap;
       overflow: hidden;
@@ -574,7 +569,6 @@ a {
           transition: 0.2s linear 0s; }
     #page-content .page-header .main-header {
       font-size: 30px;
-      color: #000;
       margin-left: -1px;
       text-align: left;
       white-space: nowrap;
@@ -673,7 +667,6 @@ a {
           margin-top: 15px; }
           #page-content .page-products .product .product-right-side .product-options .product-option {
             font-size: 11px;
-            color: #000;
             margin-top: 4.5px;
             white-space: nowrap;
             overflow: hidden;
@@ -692,7 +685,6 @@ a {
           right: 6px;
           width: 100%; }
         #page-content .page-products .product .product-price-and-buttons .price {
-          color: #000;
           display: inline-block;
           float: left;
           font-size: 16px;
@@ -799,7 +791,7 @@ a {
         background: -o-linear-gradient(top, #ec1d25 0%, #bd181f 100%);
         background: -ms-linear-gradient(top, #ec1d25 0%, #bd181f 100%);
         background: linear-gradient(to bottom, #ec1d25 0%, #bd181f 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec1d25', endColorstr='#bd181f',GradientType=0 ); }
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top_product_gradient_color1', endColorstr='$top_product_gradient_color2',GradientType=0 ); }
         #page-content .top-product a .red-block:after {
           border-color: #fff #fff #fff transparent;
           border-style: solid;
@@ -836,7 +828,6 @@ a {
     width: 100%;
     margin-top: 38px; }
     #page-content .description-text .text {
-      color: #000;
       font-size: 11px;
       line-height: 13.1px; }
   #page-content .custom-select {
@@ -871,7 +862,7 @@ a {
           transition: 0.2s linear 0s; }
 
 #page-footer {
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid #e6e6e6;
   bottom: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -890,7 +881,6 @@ a {
         display: inline-block;
         padding: 0 3px 11px; }
         #page-footer .static-part .social-links .social-link > a {
-          color: #000;
           height: 23px;
           width: 23px;
           background: url("assets/social-sprites.png");
@@ -918,7 +908,6 @@ a {
       #page-footer .static-part .phone-info .phone1 {
         margin-top: -3px; }
         #page-footer .static-part .phone-info .phone1 .short-number {
-          color: #000000;
           display: inline-block;
           font-size: 16px;
           padding-left: 16px;
@@ -951,7 +940,6 @@ a {
         #page-footer .static-part .phone-info .phone1 .long-number {
           display: inline-block;
           position: relative;
-          color: #000;
           font-size: 16px;
           margin-left: 31px; }
         #page-footer .static-part .phone-info .phone1 .info {
@@ -977,31 +965,29 @@ a {
           margin-left: 3px;
           margin-top: 1px; }
       #page-footer .static-part .phone-info .time-info {
-        color: rgba(0, 0, 0, 0.7);
+        opacity: 0.7;
         display: inline-block;
         font-size: 11px;
         font-weight: lighter;
         line-height: 13px;
         margin-left: 3px;
         margin-top: 16px; }
-  #page-footer .other-info .internal-links {
-    color: #000; }
-    #page-footer .other-info .internal-links .internal-link {
-      display: inline-block;
-      height: 24px;
-      padding-right: 19px; }
-      #page-footer .other-info .internal-links .internal-link > a {
-        font-size: 11px;
-        color: #009de0;
-        cursor: pointer; }
-        #page-footer .other-info .internal-links .internal-link > a:hover {
-          color: #e41317;
-          transition: 0.2s linear 0s; }
+  #page-footer .other-info .internal-links .internal-link {
+    display: inline-block;
+    height: 24px;
+    padding-right: 19px; }
+    #page-footer .other-info .internal-links .internal-link > a {
+      font-size: 11px;
+      color: #009de0;
+      cursor: pointer; }
+      #page-footer .other-info .internal-links .internal-link > a:hover {
+        color: #e41317;
+        transition: 0.2s linear 0s; }
   #page-footer .other-info .company-info {
     font-size: 11px;
     margin-top: 15px;
     line-height: 13px;
-    color: rgba(0, 0, 0, 0.702);
+    opacity: 0.702;
     text-indent: -10px; }
   #page-footer .other-info .payment-info {
     margin-top: 17px; }
